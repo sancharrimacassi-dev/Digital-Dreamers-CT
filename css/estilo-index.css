@@ -1,0 +1,330 @@
+/*A continuación, css del index.html*/
+
+body {
+  background-color: #B2A5FF;
+  /* fondo lavanda */
+}
+
+/*esta es la barra de navegación*/
+
+.bnav {
+  background-color: #493D9E;
+  /* morado profundo */
+  padding: 25px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.bnav-logo {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  color: #FFF2AF;
+  /* amarillo pastel */
+}
+
+.bnav-buscador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF2AF;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.bnav-buscador input {
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  background: transparent;
+  color: #493D9E;
+}
+
+.bnav-buscador button {
+  background: none;
+  border: none;
+  color: #493D9E;
+  /* morado */
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bnav-buscador button:hover {
+  background: #FFF2AF;
+  /* amarillo pastel */
+}
+
+.bnav-menu {
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+}
+
+.botbarra {
+  border: none;
+  margin-left: 10px;
+  padding: 7px 20px;
+  border-radius: 20px;
+  background-color: #B2A5FF;
+  /* lila claro */
+  color: #493D9E;
+  /* morado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botbarra:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.botbarra:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+.bnav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bnav-menu a:hover {
+  text-decoration: none;
+}
+
+/*aquí termina la barra de navegación*/
+
+/*esta es la presentación*/
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  color: #493D9E;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: #493D9E;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-bottom: 50px;
+}
+
+.presenta {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 100px 150px;
+  font-size: large;
+  color: #493D9E;
+}
+
+.imgg {
+  padding-right: 70px;
+  padding-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.imgg:hover {
+  transform: translateY(-10px);
+}
+
+/*aquí termina la presentación*/
+
+/*esta es la presentación del propósito general*/
+
+.proposito {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 80px 150px;
+  font-size: 20px;
+  color: #493D9E;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 50px;
+}
+
+.imggg {
+  padding-left: 100px;
+  padding-top: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+}
+
+.imggg:hover {
+  transform: translateY(-10px);
+} 
+
+/*aquí termina el propósito*/
+
+/*estas son las cartillas de la presentación breve de cada integrante*/
+
+.contenedor-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+
+.card {
+  background: #FFF2AF;
+  /* amarillo pastel */
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: solid 10px #B2A5FF;
+  /* lila */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-texto {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-content h3 {
+  margin: 0;
+  color: #493D9E;
+}
+
+.card-content p {
+  color: #493D9E;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/*aquí terminan las cartillas*/
+
+/*este es el atajo hacía la pestaña sobre nosotras*/
+
+.sec-atajo {
+  margin-top: 40px;
+}
+
+.botonn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.bot-nosotras {
+  border: none;
+  padding: 8px 25px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #B2A5FF;
+  /* lila claro */
+  color: #493D9E;
+  font-size: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bot-nosotras:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.bot-nosotras:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+/*aquí terminan el atajo*/
+
+/*Este es el footer*/
+
+footer {
+  background-color: #493D9E;
+  color: #FFF2AF;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: larger;
+}
+
+/*aquí termina el footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas (Responsive Design) */
+@media (max-width: 768px) {
+  .bnav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bnav-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .botbarra {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .story-cards-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

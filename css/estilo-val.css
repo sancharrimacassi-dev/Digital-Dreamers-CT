@@ -1,0 +1,128 @@
+
+
+/*A CONTINUACIÓN LA SECCIÓN VALORES*/
+
+/* Estilos generales */
+body {
+  margin: 0;
+  background-color: rgb(220, 215, 243);
+  color: rgb(73, 61, 158);
+
+}
+
+/* Título principal centrado */
+h1 {
+  font-size: 90px;
+}
+
+.fondo1 {
+  background-color: rgb(194, 185, 248);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sección de Pilares Fundamentales */
+.container h2 {
+  color: rgb(73, 61, 158);
+  border-bottom: 4px solid rgb(137, 106, 250);
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Columnas con sombra */
+.shadow {
+  padding: 40px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  border-top: 6px solid rgba(178, 165, 255);
+  border-radius: 12px;
+}
+
+/*Aplica este estilo solo cuando el puntero del mouse está sobre el elemento*/
+.shadow:hover {
+  transform: translateY(-20px);
+  /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra más grande */
+}
+
+.letra1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.letra2 {
+  font-family: "Macondo", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.letra3 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letra4 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cuadro {
+  padding: 20px;
+  /*espacio dentro del cuadro*/
+  background-color: rgba(178, 165, 255);
+  border-radius: 8px;
+  text-align: center;
+  color: rgb(53, 44, 122);
+}
+
+
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas (Responsive Design) */
+@media (max-width: 768px) {
+  .bnav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bnav-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .botbarra {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .story-cards-grid-container {
+    grid-template-columns: 1fr;
+  }
+}
