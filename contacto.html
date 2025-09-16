@@ -12,18 +12,22 @@
 
 
   <!-- 🔝 Navegación -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Digital Dreamers</div>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotras.html">Sobre Nosotras</a></li>
-        <li><a href="valores.html">Nuestros Valores</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+  <div class="barra-nav">
+    <nav>
+      <div class="nav-logo"> Digital Dreamers</div>
+      <div class="nav-menu">
+        <a class="menu-boton" href="index.html">Inicio </a>
+        <a class="menu-boton" href="nosotras.html">Sobre nosotras</a>
+        <a class="menu-boton" href="valores.html">Nuestros valores</a>
+        <a class="menu-boton" href="#contacto">Contacto</a>
+        <a class="menu-boton" href="calculadora.html">Calculadora</a>
+      </div>
+      <div class="nav-buscador">
+        <input type="text" placeholder="Buscar">
+        <button type="submit">🔍</button>
+      </div>
     </nav>
-  </header>
-
+  </div>
 
   <!-- 🌟 Servicios -->
   <section id="servicios" class="servicios">
@@ -87,35 +91,67 @@
   <!-- 📩 Contacto -->
   <section id="contacto" class="contacto">
     <h2>¡Conectemos!</h2>
-    <p>¿Tienes un proyecto en mente? ¿Quieres colaborar con nosotras? ¿O simplemente quieres charlar sobre tech? ¡Nos
-      encantaría conocerte!</p>
+    <p>Completa el formulario para que podamos conocerte mejor y responderte lo antes posible.</p>
 
+    <form class="formulario" id="formContacto">
+      <!-- Nombres -->
+      <div>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Ejemplo: Anelí Rosa" required>
+      </div>
 
-    <div class="formas-contacto">
-      <h3>Formas de contactarnos</h3>
-      <ul>
-        <li>📧 <b>Email Principal:</b> hola@digitaldreamers.dev <br><small>Para consultas generales, propuestas de
-            colaboración o simplemente para saludar. Respondemos en menos de 48 horas.</small></li>
-        <li>💼 <b>Proyectos & Partnerships:</b> proyectos@digitaldreamers.dev <br><small>¿Tienes una idea que quieres
-            convertir en realidad? Cuéntanos sobre tu proyecto y exploremos juntas las posibilidades.</small></li>
-        <li>🎓 <b>Mentorías & Workshops:</b> aprende@digitaldreamers.dev <br><small>Organizamos sesiones de mentoría
-            para jóvenes programadoras y workshops sobre tecnologías emergentes. ¡Únete a nuestra comunidad!</small>
-        </li>
-        <li>📱 <b>Redes Sociales:</b><br>
-          Instagram: @digitaldreamers<br>
-          LinkedIn: Digital Dreamers<br>
-          GitHub: @digital-dreamers<br>
-          Twitter: @digitaldreamers_dev
-        </li>
-      </ul>
-    </div>
+      <!-- Apellidos -->
+      <div>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Ejemplo: Mejía Chirhuana" required>
+      </div>
 
+      <!-- Edad -->
+      <div>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="45" placeholder="Entre 15 y 45 años. Ej: 18 años" required>
+      </div>
 
-    <form class="formulario">
-      <input type="text" placeholder="Tu nombre" required>
-      <input type="email" placeholder="Tu correo" required>
-      <textarea placeholder="Escribe tu mensaje aquí..." rows="6" required></textarea>
+      <!-- Grado de estudios -->
+      <div>
+        <label for="grado">Grado de estudios:</label>
+        <select id="grado" name="grado" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="secundaria">Secundaria en curso / completa</option>
+          <option value="tecnico">Técnico / Instituto</option>
+          <option value="universitario">Universitario en curso</option>
+          <option value="profesional">Universitario completo</option>
+          <option value="postgrado">Postgrado / Maestría</option>
+        </select>
+      </div>
+
+      <!-- Ciudad y país -->
+      <div>
+        <label for="ciudad">Ciudad/País:</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ejemplo: Lima, Perú" required>
+      </div>
+
+      <!-- Teléfono -->
+      <div>
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" pattern="^\+?[0-9\s]{7,15}$"
+          required>
+      </div>
+
+      <!-- Correo -->
+      <div>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@gmail.com" required>
+      </div>
+
+      <!-- Mensaje -->
+      <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos, ¿en qué podemos ayudarte?..." rows="6" required></textarea>
+      </div>
+
       <button type="submit">Enviar Mensaje</button>
+      <p id="estado-form" class="estado"></p>
     </form>
   </section>
 
@@ -125,6 +161,11 @@
     <p>© 2025 Digital Dreamers. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+  <script src="JS/formContacto.js">
+  </script>
 
 </body>
 
