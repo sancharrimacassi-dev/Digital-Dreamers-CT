@@ -18,23 +18,38 @@
 
 <body>
 
-    <!-- Esta es la barra de navegación -->
-    <div class="barra-nav">
-        <nav>
-            <div class="nav-logo"> Digital Dreamers</div>
-            <div class="nav-menu">
-                <a class="menu-boton" href="index.html">Inicio </a>
-                <a class="menu-boton" href="nosotras.html">Sobre nosotras</a>
-                <a class="menu-boton" href="valores.html">Nuestros valores</a>
-                <a class="menu-boton" href="contacto.html">Contacto</a>
-                <a class="menu-boton" href="calculadora.html">Calculadora</a>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Digital Dreamers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotras.html">Sobre Nosotras</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="valores.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"> Nuestros Valores </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#Pilares">Nuestros pilares fundamentales</a></li>
+                            <li><a class="dropdown-item" href="#Vivimos">Como vivimos estos valores</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cuenta</a>
+                    </li>
+                </ul>
             </div>
-            <div class="nav-buscador">
-                <input type="text" placeholder="Buscar">
-                <button type="submit">🔍</button>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!--Barra de navegacion-->
 
     <!--Seccion 1-->
@@ -165,10 +180,8 @@
         <p>© 2025 Digital Dreamers. Todos los derechos reservados.</p>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-        </script>
-
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
-
-</html>
